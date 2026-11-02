@@ -1,0 +1,24 @@
+---
+title: "INTRODUÇÃO"
+---
+
+Esta documentação descreve os endpoints da API do **Wappai**, uma plataforma para gerenciamento de assinaturas.
+
+Todos os endpoints **exigem autenticação** usando tokens Bearer.
+
+## Autenticação
+
+Para acessar a API do Wappai, você precisa de um **token Bearer**.
+
+### Como gerar o token:
+
+1. Acesse o **Dashboard**.
+2. Vá até a seção **API**.
+3. Clique em **Rotate token**.
+4. Copie o token gerado e mantenha em segurança.
+
+Todos os requests à API devem incluir o token no header:
+
+```javascript
+Authorization: Bearer <seu-token-aqui>
+```
